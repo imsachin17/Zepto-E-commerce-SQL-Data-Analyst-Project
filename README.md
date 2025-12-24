@@ -1,4 +1,4 @@
-🛒 Zepto E-commerce SQL Data Analyst Project
+Zepto E-commerce SQL Data Analyst Project
 📌 Project Overview
 
 This project is a real-world SQL data analysis case study based on an e-commerce inventory dataset scraped from Zepto, a leading Indian quick-commerce platform.
