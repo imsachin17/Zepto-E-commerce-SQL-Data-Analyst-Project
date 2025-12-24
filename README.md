@@ -1,26 +1,26 @@
-Zepto E-commerce SQL Data Analyst Project
+🛒 Zepto E-commerce SQL Data Analyst Project
 📌 Project Overview
 
-This project is a real-world SQL data analysis case study based on an e-commerce inventory dataset scraped from Zepto, a leading Indian quick-commerce platform.
+This project is a real-world SQL data analysis case study based on an e-commerce inventory dataset scraped from Zepto, one of India’s leading quick-commerce platforms.
 
 The objective is to simulate how data analysts work with raw inventory data to:
 
 Explore product catalogs
 
-Clean messy real-world data
+Clean messy, real-world data
 
 Answer business-driven questions using SQL
 
-Derive actionable insights around pricing, inventory, and revenue
+Generate insights around pricing, inventory, and revenue
 
-This project follows an end-to-end analytics workflow, making it suitable for SQL practice and data analyst portfolio use.
+This project follows an end-to-end analytics workflow, making it ideal for SQL practice and data analyst portfolios.
 
 📁 Dataset Overview
 
 Each row represents a unique SKU (Stock Keeping Unit).
-Duplicate product names exist due to different weights, discounts, or packaging — similar to real e-commerce catalogs.
+Duplicate product names exist due to different weights, discounts, and packaging, reflecting how real e-commerce catalogs are structured.
 
-Columns
+🧾 Dataset Columns
 Column Name	Description
 sku_id	Unique identifier for each SKU
 name	Product name
@@ -47,21 +47,21 @@ CREATE TABLE zepto (
 );
 
 🔄 Project Workflow
-1. Data Ingestion
+1️⃣ Data Ingestion
 
 Imported CSV dataset into PostgreSQL
 
-Resolved encoding issues by converting file to UTF-8
+Fixed encoding issues by converting the file to UTF-8
 
-Validated schema and row counts after load
+Validated row counts and schema integrity after load
 
-2. Exploratory Data Analysis (EDA)
+2️⃣ Exploratory Data Analysis (EDA)
 
 Total record count
 
 Sample data inspection
 
-Null value checks across columns
+Null value analysis across columns
 
 Distinct product category analysis
 
@@ -69,43 +69,43 @@ In-stock vs out-of-stock comparison
 
 Identification of duplicate product names across SKUs
 
-3. Data Cleaning
+3️⃣ Data Cleaning
 
-Removed invalid records with zero MRP or zero selling price
+Removed records with zero MRP or zero selling price
 
-Converted pricing fields from paise to rupees
+Converted pricing fields from paise → rupees
 
-Ensured consistency across numeric columns
+Ensured numeric consistency across columns
 
-4. Business Analysis & Insights
+4️⃣ Business Analysis & Insights
 
-Key analytical queries include:
+Key analytical queries performed:
 
-Top 10 products with highest discount percentages
+🔹 Top 10 products with highest discount percentages
 
-High-MRP products that are currently out of stock
+🔹 High-MRP products currently out of stock
 
-Estimated potential revenue by product category
+🔹 Estimated potential revenue by product category
 
-Expensive products (MRP > ₹500) with minimal discounts
+🔹 Expensive products (MRP > ₹500) with minimal discounts
 
-Top 5 categories offering highest average discounts
+🔹 Top 5 categories offering highest average discounts
 
-Price-per-gram analysis to identify value-for-money products
+🔹 Price-per-gram analysis to identify value-for-money products
 
-Product segmentation by weight (Low / Medium / Bulk)
+🔹 Product segmentation into Low / Medium / Bulk weight groups
 
-Total inventory weight aggregated by category
+🔹 Total inventory weight aggregated by category
 
 📊 Key Outcomes
 
 Identified discount-heavy SKUs for promotional strategies
 
-Highlighted revenue leakage due to out-of-stock premium products
+Highlighted revenue leakage due to out-of-stock premium items
 
 Compared category-level pricing efficiency
 
-Enabled inventory prioritization using weight and availability metrics
+Supported inventory prioritization using availability and weight metrics
 
 🛠️ Tools Used
 
